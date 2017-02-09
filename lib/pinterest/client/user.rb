@@ -18,6 +18,10 @@ module Pinterest
         get("me/boards", options)
       end
 
+      def get_suggested_boards(options={})
+        get("me/boards/suggested", options)
+      end
+
       def get_followed_boards(options={})
         get("me/following/boards", options)
       end
